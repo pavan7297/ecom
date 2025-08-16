@@ -1,0 +1,132 @@
+<nav class="bg-white shadow-md">
+  <!-- <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> -->
+  <div class="px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Left: Logo -->
+      <div class="flex-shrink-0">
+        <h1 class="text-2xl sm:text-3xl font-bold text-gray-800">
+          Godavari Ooragaya
+        </h1>
+      </div>
+
+      <!-- Center: Navigation Links (Desktop) -->
+      <div class="hidden md:flex md:flex-1 justify-center">
+        <ul class="flex space-x-6">
+          <li>
+            <a
+              routerLink="/"
+              routerLinkActive="active"
+              class="text-gray-700 hover:text-blue-600 font-medium"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/Products"
+              routerLinkActive="active"
+              class="text-gray-700 hover:text-blue-600 font-medium"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/About-Us"
+              routerLinkActive="active"
+              class="text-gray-700 hover:text-blue-600 font-medium"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/Contact-Us"
+              routerLinkActive="active"
+              class="text-gray-700 hover:text-blue-600 font-medium"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Profile/Cart/Search (Desktop) -->
+      <div class="hidden md:flex md:items-center space-x-6">
+        <a routerLink="" class="text-gray-700 hover:text-blue-600 font-medium"
+          ><span><i class="pi pi-search"></i></span
+        ></a>
+        <a routerLink="" class="text-gray-700 hover:text-blue-600 font-medium"
+          ><span><i class="pi pi-user"></i></span
+        ></a>
+        <a routerLink="" class="text-gray-700 hover:text-blue-600 font-medium"
+          ><span><i class="pi pi-shopping-cart"></i></span
+        ></a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <div class="md:hidden flex items-center">
+        <button
+          type="button"
+          class="text-gray-700 hover:text-blue-600 focus:outline-none"
+          (click)="mobileMenuOpen = !mobileMenuOpen"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="mobileMenuOpen" class="md:hidden px-4 pb-4">
+    <ul class="space-y-2">
+      <li>
+        <a
+          routerLink="/home"
+          routerLinkActive="active"
+          class="block text-gray-700 hover:text-blue-600 font-medium"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/about"
+          routerLinkActive="active"
+          class="block text-gray-700 hover:text-blue-600 font-medium"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/contact"
+          routerLinkActive="active"
+          class="block text-gray-700 hover:text-blue-600 font-medium"
+          >Contact</a
+        >
+      </li>
+      <li>
+        <a routerLink="" class="text-gray-700 hover:text-blue-600 font-medium"
+          ><span><i class="pi pi-search"></i> search</span></a
+        >
+      </li>
+      <li>
+        <a routerLink="" class="text-gray-700 hover:text-blue-600 font-medium"
+          ><span><i class="pi pi-user"></i> Profile</span></a
+        >
+      </li>
+      <li>
+        <a routerLink="" class="text-gray-700 hover:text-blue-600 font-medium"
+          ><span><i class="pi pi-shopping-cart"></i>cart</span></a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

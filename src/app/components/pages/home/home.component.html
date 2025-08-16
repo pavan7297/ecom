@@ -1,0 +1,98 @@
+<div class="min-h-screen">
+  <!-- <div
+    class="flex items-center justify-center min-h-screen"
+    style="
+      background: linear-gradient(
+        135deg,
+        #ff0000 0%,
+        #ff9900 50%,
+        #ffff00 100%
+      );
+    "
+  >
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 text-center">
+      Godavari Ooragaya
+    </h1>
+    
+  </div> -->
+  <div class="m-4 p-6">
+    <div class="flex flex-col md:flex-row gap-6 items-center">
+      <div class="w-full md:w-1/2">
+        <img
+          src="/assets/mango_pickels.jpg"
+          alt="Godavari Ooragaya"
+          class="w-full h-auto object-cover rounded-lg shadow"
+        />
+      </div>
+      <div class="w-full md:w-1/2 mt-6 md:mt-0">
+        <h1 class="text-2xl md:text-3xl font-bold mb-4">
+          Taste Tradition in Every Jar
+        </h1>
+        <p class="text-base md:text-lg">
+          Discover our handcrafted pickles, made with fresh farm ingredients,
+          aromatic spices, and time-honored recipes. From tangy mango to spicy
+          chili, each jar bursts with flavor that takes you back to home-cooked
+          goodness.
+        </p>
+      </div>
+    </div>
+
+    <!-- catageroy list -->
+    <div class="text-center mt-12 mb-6 text-4xl font-bold">
+      <h1>Our Products</h1>
+    </div>
+    <div>
+      <div class="flex justify-center gap-6 my-[6rem]">
+        @for (item of images; track item.id) {
+        <div class="flex flex-col items-center">
+          <img
+            src="{{ item.src }}"
+            alt="{{ item.alt }}"
+            class="w-32 h-32 rounded-full object-cover transition-transform duration-300 hover:scale-110 hover:shadow-xl"
+          />
+          <p class="text-center text-sm md:text-base mt-2">{{ item.title }}</p>
+        </div>
+        }
+      </div>
+    </div>
+
+    <!-- Products list -->
+
+    <div class="items-center gap-4">
+      <div>
+        <div class="mb-4 p-8 flex items-center justify-center">
+          <div class="grid grid-cols-3 gap-5">
+            @for (item of featured; track item.id) {
+            <p-card [style]="{ width: '25rem', overflow: 'hidden' }">
+              <ng-template #header>
+                <img
+                  alt="Card"
+                  class="w-full"
+                  src="https://primefaces.org/cdn/primeng/images/card-ng.jpg"
+                />
+              </ng-template>
+              <ng-template #title> {{item.name}} </ng-template>
+              <ng-template #subtitle>Price : ₹{{item.price}} </ng-template>
+              <p>
+              {{item.description}}
+              </p>
+              <ng-template #footer>
+                <div class="flex gap-4 mt-1">
+                  <p-button
+                    label="Cancel"
+                    severity="secondary"
+                    class="w-full"
+                    [outlined]="true"
+                    styleClass="w-full"
+                  />
+                  <p-button label="Add to cart" class="w-full" styleClass="w-full" />
+                </div>
+              </ng-template>
+            </p-card>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

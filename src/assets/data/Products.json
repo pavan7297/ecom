@@ -1,0 +1,441 @@
+{
+  "veg": [
+    {
+      "id": 1,
+      "name": "Mango Pickle",
+      "type": "Veg",
+      "price": 250,
+      "weight": "500g",
+      "description": "Tangy and spicy mango pickle made from handpicked raw mangoes, traditional spices, and cold-pressed oil.",
+      "reviews": [
+        {
+          "user": "Ramesh K.",
+          "rating": 5,
+          "comment": "Authentic taste, just like homemade."
+        },
+        {
+          "user": "Anitha P.",
+          "rating": 4,
+          "comment": "Delicious but slightly oily."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Gongura Pickle",
+      "type": "Veg",
+      "price": 280,
+      "weight": "500g",
+      "description": "Authentic Andhra-style gongura pickle made with fresh sorrel leaves and aromatic spices.",
+      "reviews": [
+        {
+          "user": "Karthik S.",
+          "rating": 5,
+          "comment": "Fresh and flavorful."
+        },
+        {
+          "user": "Priya L.",
+          "rating": 4,
+          "comment": "A bit spicy for my taste."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Lemon Pickle",
+      "type": "Veg",
+      "price": 230,
+      "weight": "500g",
+      "description": "Sun-cured lemon pickle with a tangy and spicy punch, made using rock salt and chili powder.",
+      "reviews": [
+        {
+          "user": "Deepak M.",
+          "rating": 5,
+          "comment": "Perfect tang and spice balance."
+        },
+        {
+          "user": "Suma V.",
+          "rating": 4,
+          "comment": "Very tasty but slightly bitter."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Tomato Pickle",
+      "type": "Veg",
+      "price": 260,
+      "weight": "500g",
+      "description": "Homemade tomato pickle cooked slowly with spices and tamarind for a rich taste.",
+      "reviews": [
+        {
+          "user": "Vijay R.",
+          "rating": 5,
+          "comment": "Goes perfectly with rice and dosa."
+        },
+        {
+          "user": "Neha G.",
+          "rating": 4,
+          "comment": "Could be a little less sour."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Amla Pickle",
+      "type": "Veg",
+      "price": 270,
+      "weight": "500g",
+      "description": "Nutritious amla pickle made with tangy Indian gooseberries, spices, and sesame oil.",
+      "reviews": [
+        { "user": "Srinivas T.", "rating": 5, "comment": "Healthy and tasty!" },
+        {
+          "user": "Pooja S.",
+          "rating": 4,
+          "comment": "Nice, but amla pieces are a bit hard."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Green Chilli Pickle",
+      "type": "Veg",
+      "price": 240,
+      "weight": "500g",
+      "description": "Spicy green chilli pickle with mustard seeds, fenugreek, and tangy lemon juice.",
+      "reviews": [
+        {
+          "user": "Harish P.",
+          "rating": 5,
+          "comment": "Perfect for spice lovers."
+        },
+        {
+          "user": "Latha J.",
+          "rating": 4,
+          "comment": "Very spicy but flavorful."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Mixed Vegetable Pickle",
+      "type": "Veg",
+      "price": 300,
+      "weight": "500g",
+      "description": "A mix of carrots, cauliflower, and beans preserved with spices and oil.",
+      "reviews": [
+        {
+          "user": "Praveen N.",
+          "rating": 5,
+          "comment": "Tastes fresh and crunchy."
+        },
+        {
+          "user": "Radhika M.",
+          "rating": 4,
+          "comment": "Could use a little more salt."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Garlic Pickle",
+      "type": "Veg",
+      "price": 260,
+      "weight": "500g",
+      "description": "Strong and aromatic garlic pickle with spicy masala for a bold flavor.",
+      "reviews": [
+        {
+          "user": "Ajay B.",
+          "rating": 5,
+          "comment": "Perfect with curd rice."
+        },
+        {
+          "user": "Kiran L.",
+          "rating": 4,
+          "comment": "A bit too strong, but I love it."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Red Chilli Pickle",
+      "type": "Veg",
+      "price": 280,
+      "weight": "500g",
+      "description": "Fiery red chilli pickle made with dried red chillies, mustard seeds, and tamarind pulp.",
+      "reviews": [
+        { "user": "Sunil G.", "rating": 5, "comment": "Spicy and addictive!" },
+        {
+          "user": "Meera C.",
+          "rating": 4,
+          "comment": "Very good, but slightly oily."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Curry Leaf Pickle",
+      "type": "Veg",
+      "price": 290,
+      "weight": "500g",
+      "description": "Aromatic curry leaf pickle with roasted spices and tangy tamarind for a unique taste.",
+      "reviews": [
+        {
+          "user": "Ravi P.",
+          "rating": 5,
+          "comment": "Fragrant and delicious."
+        },
+        {
+          "user": "Divya K.",
+          "rating": 4,
+          "comment": "Nice, but could be spicier."
+        }
+      ]
+    }
+  ],
+  "nonVeg": [
+    {
+      "id": 1,
+      "name": "Chicken Pickle",
+      "type": "Non-Veg",
+      "price": 350,
+      "weight": "500g",
+      "description": "Juicy chicken pieces marinated with Andhra-style spices and slow-cooked in gingelly oil for a long shelf life.",
+      "reviews": [
+        {
+          "user": "Suresh D.",
+          "rating": 5,
+          "comment": "Perfect with hot rice, mouth-watering taste."
+        },
+        {
+          "user": "Meena R.",
+          "rating": 4,
+          "comment": "Tasty, but I wish it had more gravy."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mutton Pickle",
+      "type": "Non-Veg",
+      "price": 420,
+      "weight": "500g",
+      "description": "Tender mutton pieces slow-cooked with aromatic spices for a rich, authentic flavor.",
+      "reviews": [
+        {
+          "user": "Arun P.",
+          "rating": 5,
+          "comment": "Melt-in-mouth soft and perfectly spiced."
+        },
+        {
+          "user": "Shalini V.",
+          "rating": 4,
+          "comment": "Loved it, but slightly oily."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Fish Pickle",
+      "type": "Non-Veg",
+      "price": 380,
+      "weight": "500g",
+      "description": "Fresh fish chunks fried and preserved in tangy, spicy masala for a coastal-style taste.",
+      "reviews": [
+        {
+          "user": "Naveen K.",
+          "rating": 5,
+          "comment": "Reminds me of home-cooked coastal pickles."
+        },
+        {
+          "user": "Anusha M.",
+          "rating": 4,
+          "comment": "Very good, but bones in a few pieces."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Prawn Pickle",
+      "type": "Non-Veg",
+      "price": 420,
+      "weight": "500g",
+      "description": "Succulent prawns cooked with garlic, ginger, and red chilli powder for a spicy seafood delight.",
+      "reviews": [
+        {
+          "user": "Ravi T.",
+          "rating": 5,
+          "comment": "Perfect spice level, prawns are fresh."
+        },
+        {
+          "user": "Divya M.",
+          "rating": 4,
+          "comment": "Very tasty, slightly chewy prawns."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Crab Pickle",
+      "type": "Non-Veg",
+      "price": 450,
+      "weight": "500g",
+      "description": "Fresh crab meat cooked with special masala for a unique seafood pickle experience.",
+      "reviews": [
+        {
+          "user": "Sandeep L.",
+          "rating": 5,
+          "comment": "Amazing flavor, great with steamed rice."
+        },
+        {
+          "user": "Haritha G.",
+          "rating": 4,
+          "comment": "Tasty but a little hard to eat due to shells."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Goat Liver Pickle",
+      "type": "Non-Veg",
+      "price": 390,
+      "weight": "500g",
+      "description": "Nutrient-rich goat liver pickle with a bold, spicy masala and strong aroma.",
+      "reviews": [
+        {
+          "user": "Sameer P.",
+          "rating": 5,
+          "comment": "Rich and flavorful, perfect for health."
+        },
+        {
+          "user": "Fathima S.",
+          "rating": 4,
+          "comment": "Tastes great, but strong smell."
+        }
+      ]
+    }
+  ],
+  "karapodi": [
+    {
+      "id": 1,
+      "name": "Kandi Podi (కంది పొడి)",
+      "type": "Veg",
+      "price": 220,
+      "weight": "250g",
+      "description": "Traditional Andhra-style toor dal powder with garlic, red chillies, and spices. Perfect with hot rice and ghee.",
+      "reviews": [
+        { "user": "Siva R.", "rating": 5, "comment": "Rich flavor, just like home." },
+        { "user": "Lalitha M.", "rating": 4, "comment": "Very good, but a little spicy." }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Nalla Karam Podi (నల్ల కారం పొడి)",
+      "type": "Veg",
+      "price": 230,
+      "weight": "250g",
+      "description": "A spicy and aromatic black chilli powder made with roasted spices and garlic.",
+      "reviews": [
+        { "user": "Kiran G.", "rating": 5, "comment": "Perfect for idli and dosa." },
+        { "user": "Pavani S.", "rating": 4, "comment": "Strong flavor, love it." }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Idli Podi (ఇడ్లీ పొడి)",
+      "type": "Veg",
+      "price": 200,
+      "weight": "250g",
+      "description": "Special podi made from roasted lentils and spices, best served with sesame oil or ghee.",
+      "reviews": [
+        { "user": "Mohan B.", "rating": 5, "comment": "Idlis taste so much better with this." },
+        { "user": "Anu R.", "rating": 4, "comment": "Tasty, but needs more garlic." }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Peanut Podi (వేరుసెనగ పొడి)",
+      "type": "Veg",
+      "price": 210,
+      "weight": "250g",
+      "description": "Nutty peanut powder with red chillies and garlic for a crunchy side to rice or tiffins.",
+      "reviews": [
+        { "user": "Sridhar K.", "rating": 5, "comment": "Perfect balance of nut and spice." },
+        { "user": "Bhavana P.", "rating": 4, "comment": "Great flavor, slightly oily." }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sesame Podi (నువ్వుల పొడి)",
+      "type": "Veg",
+      "price": 240,
+      "weight": "250g",
+      "description": "Aromatic roasted sesame seeds ground with jaggery, salt, and chillies for a sweet-spicy mix.",
+      "reviews": [
+        { "user": "Aravind M.", "rating": 5, "comment": "Unique and tasty, love it with rice." },
+        { "user": "Suma T.", "rating": 4, "comment": "Could be a bit spicier." }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Curry Leaf Podi (కరివేపాకు పొడి)",
+      "type": "Veg",
+      "price": 250,
+      "weight": "250g",
+      "description": "Fragrant curry leaves roasted with urad dal, chana dal, and spices for a healthy powder.",
+      "reviews": [
+        { "user": "Rohit K.", "rating": 5, "comment": "Aromatic and healthy." },
+        { "user": "Leela P.", "rating": 4, "comment": "Nice, but slightly bitter." }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Drumstick Leaf Podi (మునగ ఆకుల పొడి)",
+      "type": "Veg",
+      "price": 260,
+      "weight": "250g",
+      "description": "Nutritious drumstick leaves roasted and blended with lentils and spices.",
+      "reviews": [
+        { "user": "Manoj S.", "rating": 5, "comment": "Healthy and flavorful." },
+        { "user": "Swathi N.", "rating": 4, "comment": "Tastes good but a bit dry." }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Tamarind Leaf Podi (చింత ఆకుల పొడి)",
+      "type": "Veg",
+      "price": 270,
+      "weight": "250g",
+      "description": "Tangy tamarind leaves mixed with chillies and garlic for a unique powder blend.",
+      "reviews": [
+        { "user": "Ramesh V.", "rating": 5, "comment": "Different and tasty." },
+        { "user": "Kavya R.", "rating": 4, "comment": "Good flavor but slightly tangy." }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Flaxseed Podi (ఆవిసె గింజల పొడి)",
+      "type": "Veg",
+      "price": 280,
+      "weight": "250g",
+      "description": "Healthy flax seeds ground with dry chillies and garlic for a nutrient-rich mix.",
+      "reviews": [
+        { "user": "Deepak T.", "rating": 5, "comment": "Healthy and tasty combo." },
+        { "user": "Anjali P.", "rating": 4, "comment": "Nice but slightly bitter." }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Gunpowder Podi (కారం పొడి)",
+      "type": "Veg",
+      "price": 300,
+      "weight": "250g",
+      "description": "Fiery spice powder made from roasted lentils and chillies, best enjoyed with hot rice.",
+      "reviews": [
+        { "user": "Harsha N.", "rating": 5, "comment": "Perfect for spice lovers!" },
+        { "user": "Sneha V.", "rating": 4, "comment": "Too spicy for me, but tastes great." }
+      ]
+    }
+  ]
+
+}

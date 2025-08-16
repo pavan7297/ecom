@@ -1,0 +1,14 @@
+<div>
+  <div>
+    @for (item of image; track item.title) {
+    <img
+      src="{{ item.thumbnailImageSrc }}"
+      alt="{{ item.title }} showing {{ item.description }} in a {{
+        item.environment
+      }} setting {{
+        item.textInImage ? 'Text displayed: ' + item.textInImage : ''
+      }} {{ item.emotionalTone ? 'The mood is ' + item.emotionalTone : '' }}"
+    />
+    }
+  </div>
+</div>
