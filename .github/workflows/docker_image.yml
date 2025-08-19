@@ -1,9 +1,9 @@
-name: Build Angular Docker Image 
+name: Build Angular Docker Image
 
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main # or your default branch
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 22   # You are using Node 22+
+          node-version: 22 # You are using Node 22+
 
       - name: Clean install (Angular 19 + PrimeNG 19)
         run: |
@@ -25,7 +25,7 @@ jobs:
           npm install --legacy-peer-deps
 
       - name: Build Angular app
-        run: npm run build 
+        run: npm run build
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
@@ -36,9 +36,10 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build and push Docker image
+      - name: Build and push Docker image (multi-arch)
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
+          platforms: linux/amd64,linux/arm64
           tags: pavansrinivas32/angular-ecom:latest
