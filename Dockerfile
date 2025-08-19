@@ -21,7 +21,7 @@ FROM nginx:alpine
 COPY --from=build /app/dist/demo/browser /usr/share/nginx/html
 
 # Expose port 80
-EXPOSE 80
+EXPOSE 4201
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
