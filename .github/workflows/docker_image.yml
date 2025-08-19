@@ -16,12 +16,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20   # Angular 20+ requires Node 20
+          node-version: 22   # You are using Node 22+
 
-      - name: Clean install
+      - name: Clean install (Angular 19 + PrimeNG 19)
         run: |
           rm -rf node_modules package-lock.json
-          npm install --force   # ensure Angular 20 + PrimeNG compatibility
+          npm install primeng@19 @angular/cdk@19 --save
+          npm install --legacy-peer-deps
 
       - name: Build Angular app
         run: npm run build 
