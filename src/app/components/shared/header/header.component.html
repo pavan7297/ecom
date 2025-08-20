@@ -55,9 +55,23 @@
         <a routerLink="" class="text-gray-700 hover:text-blue-600 font-medium"
           ><span><i class="pi pi-user"></i></span
         ></a>
-        <a routerLink="" class="text-gray-700 hover:text-blue-600 font-medium"
-          ><span><i class="pi pi-shopping-cart"></i></span
-        ></a>
+        <a class="text-gray-700 hover:text-blue-600 font-medium" (click)="visible2 = true"
+          ><span
+            ><i class="pi pi-shopping-cart"> </i
+            ><p-drawer
+              header="Cart"
+              [(visible)]="visible2"
+              position="right"
+            >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </p-drawer></span
+          ></a
+        >
       </div>
 
       <!-- Mobile Hamburger -->
@@ -123,8 +137,20 @@
         >
       </li>
       <li>
-        <a routerLink="" class="text-gray-700 hover:text-blue-600 font-medium"
-          ><span><i class="pi pi-shopping-cart"></i>cart</span></a
+        <a class="text-gray-700 hover:text-blue-600 font-medium" (click)="visible2 = true"
+          ><span><i class="pi pi-shopping-cart"></i>cart</span>
+          <p-drawer
+            header="Right Drawer"
+            [(visible)]="visible2"
+            position="right"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </p-drawer></a
         >
       </li>
     </ul>
